@@ -1,0 +1,337 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    min-width: $base-width;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+main {
+    // padding: 0px 0 100px;
+}
+
+section {
+    // padding: 50px 0 90px;
+}
+
+//-------------------------------------------------------
+.l-container {
+    width: $base-width;
+    
+}
+//-----------------MainVisual Section--------------------------------------
+.c-mainvisual {
+    max-width: $base-width;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-box-align: center;
+    margin-top: 32px;
+    color: #000;
+    position: relative;
+    height: 400px;
+    padding: 50px 0 90px;
+
+    &__img {
+        position: absolute;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 32px;
+        left: 40px;
+        line-height: 1.5;
+    
+    }
+   
+
+    //==================
+    &--subpage {
+        // height: 300px;
+
+        h2 {
+            font-size: 5rem;
+        }
+    }
+}
+
+.c-tag {
+    &__green {
+        background-color: #a3d39c;
+    }
+
+    &__pink {
+        background-color: #ffdfdf;
+    }
+
+    &__yellow {
+        background-color: #fff799;
+    }
+} 
+// ---------NEWS SECTION-------->
+.c-news {
+    // text-align: center;
+    max-width: $base-width;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-box-align: center;
+    margin-top: 54px;
+    font-size: 1.6rem;
+
+    &__title {
+        height: 50px;
+        padding-left: 20px;
+        padding-bottom: $padding-xl;
+        border: 1px solid #ffd800;
+        background-color: #fff9da;
+        border-left-width: 8px;
+
+    }
+
+    &__items {
+        display: flex;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    &__img {
+        position: relative;
+        width: 350px;
+        height: 190px;
+
+        img {
+            max-width: none;
+        }
+    }
+
+    &__tag {
+        position: absolute;
+        width: 112px;
+        text-align: center;
+        font-size: 1.4rem;
+        left: 0;
+        height: 30px;
+    }
+
+    &__viewmore {
+        margin-top: 62px;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    &__viewmorebtn {
+        width: 300px;
+        height: 65px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    &__content {
+        margin-left: 40px;
+    }
+
+    .c-content {
+        &__title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin-top: 13px;
+            line-height: 1.4;
+        }
+
+        &__btn {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 150px;
+            height: 50px;
+            border: 1px solid #ffff;
+            border-radius: 5px;
+            color: #ffff;
+            background-color: #afafaf;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        
+    }
+}
+// ---------END NEWS SECTION-------->
+// ---------FEATURE SECTION-------->
+.c-feature {
+    max-width: $base-width;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-box-align: center;
+    color: #000;
+    position: relative;
+    padding: 50px 0 90px;
+    margin-top: 70px;
+    background-color: #fafafa;
+
+    &__title {
+        height: 50px;
+        padding-left: 20px;
+        padding-bottom: $padding-xl;
+        border: 1px solid #f68e56;
+        background-color: #fff2f2;
+        border-left-width: 8px;
+        font-size: 1.6rem;
+    }
+
+    &__list {
+        margin-top: 29px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        row-gap: 45px;
+    }
+
+    &__item {
+        width: 300px;
+
+        img {
+            height: 185px;
+        }
+    }
+
+    &__tag {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-align: center;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        padding: 2px 23px;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin-top: 16px;
+        line-height: 1.4;
+        color: #222;
+    }
+
+    &__viewmore {
+        margin-top: 54px;
+    }
+
+    &__viewmorebtn {
+        padding: 20px 96px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        border-radius: 5px;
+        color: #fff;
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+// ---------END FEATURE SECTION-------->
+// ---------BLOG SECTION-------->
+.c-blog {
+    max-width: $base-width;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-box-align: center;
+    color: #000;
+    position: relative;
+    padding: 50px 0 90px;
+    margin-top: 46px;
+
+    &__title {
+        height: 50px;
+        padding-left: 20px;
+        border: 1px solid #6dcff6;
+        background-color: #ebebeb;
+        border-left-width: 8px;
+        font-size: 1.6rem;
+    }
+
+    &__list {
+        margin-top: 29px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        row-gap: 45px;
+    }
+
+    &__item {
+        position: relative;
+        width: calc((100% - 52px)/2);
+
+        img {
+            height: 185px;
+        }
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin-top: 16px;
+        line-height: 1.4;
+        color: #222;
+    }
+
+    &__tag {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-align: center;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        padding: 2px 23px;
+    }
+
+    &__viewmore {
+        margin-top: 44px;
+    }
+
+    &__viewmorebtn {
+        padding: 20px 96px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        border-radius: 5px;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+}
+// ---------END BLOG SECTION-------->

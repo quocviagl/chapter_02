@@ -1,0 +1,33 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+    border-bottom: 1px solid;
+    -webkit-box-align: center;
+    padding-bottom: 20px;
+}
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav {
+    ul {
+    }
+
+    li {
+        display: inline-block;
+
+        + li {
+            margin-left: 28px;
+
+        }
+    }
+
+    a {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
