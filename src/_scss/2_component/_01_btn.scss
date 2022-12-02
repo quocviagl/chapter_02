@@ -4,14 +4,16 @@ btn
 
 /*
 ------------------------------------------------------------*/
-.c-mainvisuall__category {
-    padding: 4px 0;
-    background-color: #ffdfdf;
-    font-size: 1.6rem;
-    font-weight: 700;
-    width: 130px;
-    text-align: center;
-    position: relative;
+.c-mainvisuall {
+    &__category {
+        padding: 4px 0;
+        background-color: #ffdfdf;
+        font-size: 1.6rem;
+        font-weight: 700;
+        width: 130px;
+        text-align: center;
+        position: relative;
+    }
 }
 
 .c-newsbtn {

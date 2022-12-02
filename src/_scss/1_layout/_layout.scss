@@ -28,25 +28,30 @@ section {
 //-----------------MainVisual Section--------------------------------------
 .c-mainvisual {
     max-width: $base-width;
+    background-image: url(../../_public/assets/img/home_img.png);
     margin: 0 auto;
     align-items: center;
     -webkit-box-align: center;
     margin-top: 32px;
     color: #000;
     position: relative;
-    height: 400px;
+    height: 360px;
     padding: 50px 0 90px;
-
-    &__img {
-        position: absolute;
-    }
-
     &__text {
-        position: absolute;
-        bottom: 32px;
-        left: 40px;
+        margin-top: 13px;
+        color: #222;
+        font-size: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 415px;
         line-height: 1.5;
-    
+        font-weight: 500;
+        position: absolute;
+        bottom: 34px;
+        left: 40px
     }
    
 
@@ -75,15 +80,16 @@ section {
 } 
 // ---------NEWS SECTION-------->
 .c-news {
-    // text-align: center;
+
     max-width: $base-width;
     margin: 0 auto;
     align-items: center;
     -webkit-box-align: center;
-    margin-top: 54px;
-    font-size: 1.6rem;
+    margin-top: 44px;
 
     &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
         height: 50px;
         padding-left: 20px;
         padding-bottom: $padding-xl;
@@ -119,7 +125,7 @@ section {
     }
 
     &__viewmore {
-        margin-top: 62px;
+        margin-top: 60px;
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -154,22 +160,22 @@ section {
         &__description {
             font-weight: 500;
             font-size: 1.4rem;
-            margin-top: 13px;
+            margin-top: 12px;
             line-height: 1.4;
         }
 
         &__btn {
             position: absolute;
-            right: 0;
-            bottom: 0;
+            right: 0px;
+            bottom: 2px;
             width: 150px;
             height: 50px;
             border: 1px solid #ffff;
             border-radius: 5px;
             color: #ffff;
             background-color: #afafaf;
-            font-size: 1.6rem;
-            font-weight: bold;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         
     }
@@ -184,17 +190,17 @@ section {
     color: #000;
     position: relative;
     padding: 50px 0 90px;
-    margin-top: 70px;
+    margin-top: 68px;
     background-color: #fafafa;
 
     &__title {
         height: 50px;
-        padding-left: 20px;
+        padding: 2px 20px;
         padding-bottom: $padding-xl;
         border: 1px solid #f68e56;
         background-color: #fff2f2;
         border-left-width: 8px;
-        font-size: 1.6rem;
+        font-size: 2.4rem;
     }
 
     &__list {
@@ -219,14 +225,14 @@ section {
     }
 
     &__tag {
-        margin-top: 14px;
+        margin-top: 16px;
         font-weight: 500;
         font-size: 1.4rem;
         text-align: center;
         max-width: -webkit-fit-content;
         max-width: -moz-fit-content;
         max-width: fit-content;
-        padding: 2px 23px;
+        padding: 1px 22px;
     }
 
     &__description {
@@ -253,7 +259,6 @@ section {
         right: 0;
     }
 }
-
 
 // ---------END FEATURE SECTION-------->
 // ---------BLOG SECTION-------->
