@@ -7,11 +7,11 @@
       },
       {
         "title": "Link 1",
-        "url": "/about.html"
+        "url": "/link1.html"
       },
       {
         "title": "Link 2",
-        "url": "/nested/"
+        "url": "/link2.html"
       }
     ]
   }

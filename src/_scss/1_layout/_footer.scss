@@ -43,14 +43,18 @@ footer
     width: $base-width;
     margin: 0 auto;
 
+    &__item:nth-child(3) {
+        margin-left: 3px;
+    }
+
     &__list {
         display: flex;
-        column-gap: 51px;
+        column-gap: 48px;
     }
 
     &__item {
         font-size: 1.4rem;
-        width: calc((100% - 86px)/3);
+        width: calc((100% - 100px)/3);
     }
 
     &__title {
@@ -62,7 +66,7 @@ footer
     }
 
     &__link {
-        margin-top: 5px;
+        margin-top: 4px;
         font-weight: 400;
         line-height: 1.4;
     }
@@ -83,8 +87,8 @@ footer
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f105";
-    padding-right: 6px;
-    font-size: 0.9rem;
+    padding-right: 8px;
+    font-size: 1rem;
 }
 
 .u-link::before {
@@ -92,7 +96,6 @@ footer
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f0c1";
-    padding-right: 6px;
+    padding-right: 7px;
     font-size: 1rem;
-    margin-left: -2px;
 }

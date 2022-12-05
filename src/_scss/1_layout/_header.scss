@@ -10,25 +10,24 @@
     border-bottom: 1px solid;
     -webkit-box-align: center;
     padding-bottom: 18px;
-    margin-bottom: 84px;
+    margin-top: 20px;
+}
+
+.is-active {
+    font-weight: 900;
 }
 /* Main menu
 ------------------------------------------------------------*/
-.c-gnav {
+.c-gnav {   
+    padding-left: 4px;
+
     ul {
+        display: flex;
+        gap: 32px;
     }
-
-    li {
-        display: inline-block;
-
-        + li {
-            margin-left: 28px;
-
-        }
-    }
-
+    
     a {
-        font-size: 14px;
+        font-size: 1.4rem;
         text-transform: capitalize;
     }
 }

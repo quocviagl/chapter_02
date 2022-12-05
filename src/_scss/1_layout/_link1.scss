@@ -1,0 +1,321 @@
+.p-link1 {
+    width: $base-width;
+    margin: 0 auto;
+}
+//TOP BREADCRUMB 
+.c-topbreadcrumb,
+.c-bottombreadcrumb {
+    padding-top: 3px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.c-topbreadcrumb {
+    &__home {
+        text-decoration: underline;
+        font-size: 1.4rem;
+        margin-left: -9px;
+        padding: 1px 0 0 1px;
+
+    }
+
+    &__current {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    &__current::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        content: "\f105";
+        padding-right: 8px;
+        font-size: 1.4rem;
+    }
+}
+
+.c-bottombreadcrumb {
+    margin-top: 112px;
+    padding-left: 7px;
+    margin-bottom: 4px;
+
+    &__home {
+        text-decoration: underline;
+        font-size: 1.4rem;
+        margin-left: -10px;
+        padding: 2px;
+        
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            content: "\f015";
+            padding-right: 3px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__current {
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            content: "\f105";
+            padding-right: 8px;
+            font-size: 1.4rem;
+            display: inline-block;
+            margin-left: -1px;
+            padding-top: 1px;
+        }
+    }
+
+}
+
+//END TOP BREADCRUMB
+//ANCHOR LINK TAB
+.c-anchorlink {
+    display: flex;
+    gap: 50px;
+    margin-top: 39px;
+    color: #fff;
+
+    &__item {
+        width: calc((100% - 100px)/3);
+        border-radius: 6px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        background-color: #00aeef;
+        padding: 10px;
+        margin-left: -2px;
+        margin-top: -2px;
+
+        &::before {
+            vertical-align: middle;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f107";
+            padding-right: 4px;
+            font-size: 1.6rem;
+            vertical-align: baseline;
+        }
+    }
+}
+
+.c-content {
+    &__underline {
+        text-decoration: underline;
+        font-weight: 500;
+
+        &--blue {
+            color: #758dfb;
+        }
+
+        &--red {
+            color: #f00;
+        }
+
+        &--orange {
+            color: #ffc07d;
+        }
+    }
+}
+
+.c-tag {
+    &--yellow {
+        background-color: #fff799;
+    }
+
+    &--pink {
+        background-color: #ffdfdf;
+    }
+
+    &--green {
+        background-color: #a3d39c;
+    }
+}
+
+.c-anchor {
+    &__title {
+        margin-left: -1px;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 8px;
+    }
+}
+// ---------ANCHOR LINK 1 SECTION-------->
+.p-anchor1 {
+    margin-top: 64px;
+}
+
+.c-anchor1 {
+    &__description {
+        margin-top: 26px;
+        margin-left: -1px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 45px;
+        padding-top: 1px;
+    }
+
+    &__item {
+        width: 300px;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__tag {
+        padding: 6px 22px;
+        margin-top: 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    &__itemdiscription {
+        margin-top: 22px;
+        line-height: 1.4;
+        width: 300px;
+    }
+
+}
+// ---------END ANCHOR LINK 1-------->
+// ---------ANCHOR LINK 2-------->
+.c-anchor2 {
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 18px;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        width: calc((100% - (18px * 3)) / 4);
+        margin-bottom: 15px;
+
+        &:nth-child(4n-2) {
+            margin-left: -1px;
+            margin-right: 1px;
+        }
+    }
+
+    &__tag {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        display: inline-block;
+        margin-top: 13px;
+        padding: 8px 23px 5px 22px;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-top: 16px;
+    }
+}
+// ---------END ANCHOR LINK 2-------->
+// ---------ANCHOR LINK 3-------->
+.c-anchor3 {
+    &__title {
+        margin-top: 37px;
+    }
+    
+}
+
+
+.c-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    td:first-child {
+        padding: 10px 20px;
+    }
+
+    &__caption {
+        font-size: 1.6rem;
+        font-weight: 700;
+        background-color: #ece6e6;
+        padding: 8px 14px;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    // TABLE 1 CSS
+    &1 {
+        margin-top: 15px;
+
+        &__caption {
+            margin-top: 30px;
+            margin-bottom: 22px;
+        }
+
+        &__description {
+            margin-left: -1px;
+        }
+
+        th {
+            background-color: #acd373;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+
+        td {
+            padding: 10px 30px;
+        }
+    }
+    //TABLE 2 CSS
+    &2 {
+        &__caption {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+
+        &__description {
+            margin-bottom: 16px;
+        }
+
+        th {
+            background-color: #acd373;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+
+        td {
+            padding: 10px 30px;
+        }
+    }
+}
+// ---------END ANCHOR LINK 2-------->
+.u-bg {
+    &--gray {
+        background-color: #ece6e6;
+    }
+
+    &--blue {
+        background-color: #6dcff6;
+    }
+}
