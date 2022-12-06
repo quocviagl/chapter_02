@@ -1,13 +1,45 @@
 .p-link1 {
-    width: $base-width;
-    margin: 0 auto;
+    width: 100%;
+
+    .p-link1__container {
+        width: $base-width;
+        margin: 0 auto;
+    }
 }
 //TOP BREADCRUMB 
-.c-topbreadcrumb,
-.c-bottombreadcrumb {
+.c-topbreadcrumb {
     padding-top: 3px;
     display: flex;
     column-gap: 12px;
+}
+
+.c-bottombreadcrumb__content {
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    margin-top: 122px; 
+}
+
+.c-bottombreadcrumb {
+    width: $base-width;
+    margin: 0 auto;
+    padding-top: 3px;
+    display: flex;
+    column-gap: 12px;
+
+}
+
+.c-bottombreadcrumblink1 {
+    margin-top: 110px;
+}
+
+.c-homebottombreadcrumb {
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+.c-homepagebreadcrum {
+    margin-bottom: -4px;
 }
 
 .c-topbreadcrumb {
@@ -34,7 +66,7 @@
 }
 
 .c-bottombreadcrumb {
-    margin-top: 112px;
+
     padding-left: 7px;
     margin-bottom: 4px;
 
@@ -63,15 +95,21 @@
             font-weight: 600;
             content: "\f105";
             padding-right: 8px;
-            font-size: 1.4rem;
+            font-size: 1.7rem;
             display: inline-block;
             margin-left: -1px;
             padding-top: 1px;
+
         }
     }
 
 }
 
+.u-fixmargin {
+    margin-bottom: 0;
+
+
+}
 //END TOP BREADCRUMB
 //ANCHOR LINK TAB
 .c-anchorlink {
