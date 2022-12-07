@@ -24,15 +24,10 @@ section {
 .l-container {
     width: $base-width;
     margin: 0 auto;
-    margin-top: 23px;
+    margin-top: 22px;
 }
 
-.c-topbreadcrumb::before {
-    margin-left: -1px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    content: "\f015";
-}
+
 //-----------------MainVisual Section--------------------------------------
 .c-mainvisual {
     background-image: url("../../_public/assets/img/home_img.png");
@@ -43,6 +38,19 @@ section {
     height: 360px;
     padding: 50px 0 90px;
     margin-bottom: 44px;
+
+    &__category {
+        background-color: #ffdfdf;
+        padding: 5px 1px 5px 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+        width: 128px;
+        height: 35px;
+        margin-top: 2px;
+        text-align: center;
+        position: relative;
+        margin-bottom: -1px;
+    }
 
     &__text {
         color: #222;
@@ -59,16 +67,6 @@ section {
         bottom: 32px;
         left: 40px;
     }
-   
-
-    //==================
-    // &--subpage {
-    //     // height: 300px;
-
-    //     h2 {
-    //         font-size: 5rem;
-    //     }
-    // }
 }
 
 .c-tag {
@@ -91,17 +89,18 @@ section {
     margin: 0 auto;
     align-items: center;
     -webkit-box-align: center;
-    margin-top: 4px;
+    margin-top: -1px;
+    margin-bottom: 1px;
 
     &__title {
         font-size: 2.4rem;
         font-weight: 600;
         height: 50px;
-        padding-left: 19px;
+        padding: 1px 0 0 20px;
         border: 1px solid #ffd800;
         background-color: #fff9da;
-        border-left-width: 8px;
-        
+        border-left-width: 7px;
+
     }
     
     &__items {
@@ -114,8 +113,11 @@ section {
         position: relative;
         width: 350px;
         height: 190px;
+        margin-top: -1px;
+        margin-bottom: 1px;
 
         img {
+            margin-top: 1px;
             max-width: none;
         }
     }
@@ -126,11 +128,13 @@ section {
         text-align: center;
         font-size: 1.4rem;
         left: 0;
+        top: 1px;
         height: 30px;
     }
 
     &__viewmore {
-        margin-top: 60px;
+        margin-top: 61px;
+        margin-left: -3px;
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -144,16 +148,19 @@ section {
         width: 300px;
         height: 65px;
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         border: 2px solid #000;
         border-radius: 5px;
         color: #fff;
         cursor: pointer;
+        padding: 10px 9px 8px 10px;
     }
 
     &__content {
         margin-left: 40px;
+        margin-top: 1px;
+
     }
 
     .c-content {
@@ -175,15 +182,16 @@ section {
         &__btn {
             position: absolute;
             right: 0;
-            bottom: 2px;
-            width: 150px;
-            height: 50px;
-            border: 1px solid #ffff;
-            border-radius: 5px;
-            color: #ffff;
+            bottom: 0;
+            width: 152px;
+            height: 52px;
+            border: 1px solid #fff;
+            border-radius: 6px;
+            color: #fff;
             background-color: #afafaf;
             font-size: 1.5rem;
             font-weight: 600;
+            padding: 12px 17px 12px 16px;
         }
         
     }
@@ -191,19 +199,25 @@ section {
 // ---------END NEWS SECTION-------->
 // ---------FEATURE SECTION-------->
 .c-feature {
-    max-width: $base-width;
-    margin: 0 auto;
+    max-width: 100%;
     align-items: center;
     -webkit-box-align: center;
     color: #000;
-    position: relative;
     padding: 50px 0 90px;
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: #fafafa;
+
+    &__content {
+        position: relative;
+        max-width: $base-width;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 
     &__title {
         height: 50px;
         padding-left: 20px;
+        padding-top: 1px;
         border: 1px solid #f68e56;
         background-color: #fff2f2;
         border-left-width: 7px;
@@ -255,7 +269,7 @@ section {
     }
 
     &__viewmorebtn {
-        padding: 20px 96px;
+        padding: 21px 95px 19px 96px;
         font-size: 1.8rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -264,6 +278,7 @@ section {
         color: #fff;
         position: absolute;
         right: 0;
+        bottom: -119px;
         cursor: pointer;
     }
 }
@@ -278,15 +293,17 @@ section {
     color: #000;
     position: relative;
     padding: 50px 0 90px;
-    margin-top: 46px;
+    margin-top: 44px;
 
     &__title {
         height: 50px;
         padding-left: 20px;
+        padding-top: 1px;
         border: 1px solid #6dcff6;
         background-color: #ebebeb;
         border-left-width: 7px;
         font-size: 2.4rem;
+        margin-bottom: 30px;
     }
 
     &__list {
@@ -304,7 +321,7 @@ section {
 
     &__item {
         position: relative;
-        width: calc((100% - 52px)/2);
+        width: calc((100% - 50px)/2);
 
         img {
             height: 185px;
@@ -320,14 +337,15 @@ section {
     }
 
     &__tag {
-        margin-top: 14px;
+        margin-top: 15px;
         font-weight: 500;
         font-size: 1.4rem;
         text-align: center;
         max-width: -webkit-fit-content;
         max-width: -moz-fit-content;
         max-width: fit-content;
-        padding: 2px 20px;
+        padding: 1px 21px;
+        margin-bottom: 17px;
     }
 
     &__viewmore {
@@ -335,7 +353,7 @@ section {
     }
 
     &__viewmorebtn {
-        padding: 20px 96px;
+        padding: 20px 102px 20px 96px;
         font-size: 1.8rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -343,19 +361,11 @@ section {
         border-radius: 5px;
         color: #fff;
         position: absolute;
-        right: 0;
+        right: -1px;
         left: 0;
         margin: 1px 0 0 1px;
         cursor: pointer;
     }
 }
 // ---------END BLOG SECTION-------->
-.c-homebreadcrumb {
-    width: $base-width;
-    margin: 0 auto;
-    margin-top: 94px;
-    padding-left: 7px;
-    font-size: 1.4rem;
-    border: 1px solid #afafaf;
-}
 
