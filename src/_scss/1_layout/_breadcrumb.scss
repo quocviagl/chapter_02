@@ -12,6 +12,7 @@
     font-size: 1.4rem;
     border: 1px solid #afafaf;
 }
+
 .c-topbreadcrumb {
     padding-top: 3px;
     display: flex;
@@ -38,15 +39,19 @@
 .c-bottombreadcrumblink1 {
     margin-top: 108px;
 }
-.c-link1pagebreadcrum{
+
+.c-link1pagebreadcrum {
     padding-bottom: 3px;
 }
-.c-bottombreadcrumblink2{
+
+.c-bottombreadcrumblink2 {
     margin-top: 121px;
 }
-.c-link2bottombreadcrumb{
+
+.c-link2bottombreadcrumb {
     padding-bottom: 4px;
 }
+
 .c-topbreadcrumb {
     &::before {
         margin-left: -1px;
@@ -54,6 +59,7 @@
         font-weight: 700;
         content: "\f015";
     }
+
     &__home {
         text-decoration: underline;
         font-size: 1.4rem;
@@ -84,6 +90,7 @@
     padding-top: 1px;
     display: flex;
     column-gap: 12px;
+
     &__home {
         text-decoration: underline;
         font-size: 1.4rem;
